@@ -109,7 +109,11 @@ try:
             break
         
 except KeyboardInterrupt:
-    cv2.destroyAllWindows()
+        cv2.destroyAllWindows()
+finally:
+        cv2.destroyWindow('XiCAM recording')
+        out.release()
+
 
 
 '''store csv file with time and frames'''
